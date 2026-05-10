@@ -41,7 +41,7 @@ nav{
 }
 nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,0.06)}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo img{height:48px;width:auto}
+.nav-logo img{height:55px;width:auto}
 .nav-links{display:flex;align-items:center;gap:36px;list-style:none}
 .nav-links a{
   font-size:11px;letter-spacing:.15em;text-transform:uppercase;
@@ -492,7 +492,7 @@ footer{
 <!-- NAVIGATION -->
 <nav id="mainNav">
   <a class="nav-logo" href="#" onclick="showPage('home');return false;">
-    <img src="logo-v3.png" alt="Daily Picks Logo">
+    <img src="logo-v3.png" alt="Daily Picks Logo" style="width:300px;height:auto;">
   <ul class="nav-links" id="navLinks">
     <li><a href="#" onclick="showPage('home');toggleMenu();return false;">Home</a></li>
     <li><a href="#" onclick="showPage('home');setTimeout(()=>document.getElementById('products').scrollIntoView({behavior:'smooth'}),100);toggleMenu();return false;">Products</a></li>
@@ -547,8 +547,8 @@ footer{
     </div>
     <div class="hero-right">
       <div class="hero-image-grid">
-        <div class="hero-img-card" onclick="showProduct(0)" style="grid-row:span 2;background:#F5F0E8;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px">
-          <span style="font-size:64px">🫗</span>
+        <img src="logo-v3.png" alt="Daily Picks Logo" style="width:300px;height:auto;">
+        <span style="font-size:64px">🫗</span>
           <div class="badge">
             <span class="badge-name">Portable Blender Pro</span>
             <span class="badge-price">$34.99 on Amazon</span>
