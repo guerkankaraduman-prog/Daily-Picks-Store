@@ -42,9 +42,3 @@ function AboutTeaser() {
     </section>
   );
 }
-
-<<<<<<< HEAD
-export default AboutTeaser;
-=======
-export default AboutTeaser;
->>>>>>> ce75893 (Add premium sections and styling)

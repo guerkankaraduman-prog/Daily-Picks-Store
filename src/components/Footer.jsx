@@ -38,9 +38,3 @@ function Footer() {
     </footer>
   );
 }
-
-<<<<<<< HEAD
-export default Footer;
-=======
-export default Footer;
->>>>>>> ce75893 (Add premium sections and styling)

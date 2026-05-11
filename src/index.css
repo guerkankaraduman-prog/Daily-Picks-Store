@@ -121,7 +121,6 @@ section{
   transform:translateY(-10px) scale(1.02);
   box-shadow:0 20px 60px rgba(255,122,0,0.15);
 }
-
 .product-image-wrapper{
   position:relative;
   overflow:hidden;
@@ -139,9 +138,4 @@ section{
   display: flex;
   gap: 32px;
   align-items: center;
-}
-
-.nav-links li {
-  list-style: none;
-}
 
