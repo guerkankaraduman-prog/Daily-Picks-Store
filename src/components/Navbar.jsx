@@ -1,43 +1,48 @@
-import React from "react";
-import logo from "../assets/logo-v4.png";
-
-function Navbar() {
+export default function Navbar() {
   return (
-    <nav id="mainNav">
-      <a className="nav-logo" href="/">
-        <img
-          src={logo}
-          alt="Daily Picks Logo"
-          style={{ width: "150px", height: "auto" }}
-        />
-      </a>
+    <nav
+      style={{
+        width: "100%",
+        padding: "20px 40px",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        background: "rgba(0,0,0,0.7)",
+        backdropFilter: "blur(10px)",
+        zIndex: 1000,
+      }}
+    >
+      <div
+        style={{
+          color: "white",
+          fontSize: "28px",
+          fontWeight: "900",
+        }}
+      >
+        DP
+      </div>
 
-      <ul className="nav-links" id="navLinks">
-        <li><a href="/">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#disclosure">Disclosure</a></li>
+      <div
+        style={{
+          display: "flex",
+          gap: "30px",
+        }}
+      >
+        <a href="/" style={{ color: "white", textDecoration: "none" }}>
+          Home
+        </a>
 
-        <li>
-          <a
-            href="https://www.amazon.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-cta"
-          >
-            Shop Amazon ↗
-          </a>
-        </li>
-      </ul>
+        <a href="#products" style={{ color: "white", textDecoration: "none" }}>
+          Products
+        </a>
 
-      <button className="menu-toggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <a href="#about" style={{ color: "white", textDecoration: "none" }}>
+          About
+        </a>
+      </div>
     </nav>
   );
 }
-
-export default Navbar;
