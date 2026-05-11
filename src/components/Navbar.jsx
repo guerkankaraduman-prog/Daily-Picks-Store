@@ -41,15 +41,17 @@ export default function Navbar() {
         />
 
         <span
-          style={{
-            color: "white",
-            fontSize: "32px",
-            fontWeight: "800",
-            letterSpacing: "-1px",
-          }}
-        >
-          DAILY PICKS
-        </span>
+  style={{
+    color: "white",
+    fontSize: "32px",
+    fontWeight: "800",
+    letterSpacing: "-1px",
+  }}
+>
+  <>
+    DAILY <span style={{ color: "#ff7a00" }}>PICKS</span>
+  </>
+</span>
       </a>
 
       {/* NAV LINKS */}
