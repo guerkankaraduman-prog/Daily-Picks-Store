@@ -69,4 +69,8 @@ function Products() {
       </div>
     </section>
   );
+<<<<<<< HEAD
 export default Products;
+=======
+export default Products;
+>>>>>>> ce75893 (Add premium sections and styling)
