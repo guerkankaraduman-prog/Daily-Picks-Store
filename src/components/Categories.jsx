@@ -1,4 +1,4 @@
-<!-- CATEGORIES -->
+{/* CATEGORIES */}
   <section>
     <div class="section-header reveal">
       <span class="section-tag">Browse By Category</span>

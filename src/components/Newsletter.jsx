@@ -1,4 +1,4 @@
-  <!-- NEWSLETTER -->
+{/* NEWSLETTER */}
   <section class="newsletter-section">
     <div class="newsletter-inner reveal">
       <span class="section-tag">Stay in the Loop</span>

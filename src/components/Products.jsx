@@ -1,4 +1,4 @@
-<!-- TRENDING PRODUCTS -->
+{/* TRENDING PRODUCTS */}
   <section class="products-section" id="products">
     <div class="section-header reveal">
       <span class="section-tag">Trending Now</span>

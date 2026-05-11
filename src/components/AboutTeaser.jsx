@@ -1,4 +1,4 @@
- <!-- ABOUT TEASER -->
+{/* AboutTeaser */}
   <section>
     <div class="about-inner">
       <div class="about-text reveal">

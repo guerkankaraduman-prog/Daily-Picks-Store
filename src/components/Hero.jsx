@@ -1,4 +1,4 @@
-<!-- HERO -->
+{/* HERO */}
   <section class="hero">
     <div class="hero-content">
       <span class="hero-tag">Die besten Produkte. Jeden Tag neu entdeckt.</span>
