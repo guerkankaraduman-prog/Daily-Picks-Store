@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../assets/logo-v3.png";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
     <nav id="mainNav">
       <a className="nav-logo" href="/">
         <img
-          src={logo.png}
+          src={logo}
           alt="Daily Picks Logo"
           style={{ width: "150px", height: "auto" }}
         />
