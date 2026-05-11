@@ -33,8 +33,8 @@ export default function Navbar() {
           src={logo}
           alt="Daily Picks Logo"
           style={{
-            width: "52px",
-            height: "52px",
+            width: "90px",
+            height: "90px",
             objectFit: "contain",
             borderRadius: "14px",
           }}
