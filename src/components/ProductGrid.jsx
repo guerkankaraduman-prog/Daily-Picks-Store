@@ -54,10 +54,12 @@ export default function ProductGrid() {
           <div
             key={index}
             style={{
-              background: "#111",
+              background: "linear-gradient(180deg,#111,#0a0a0a)",
               borderRadius: "28px",
               overflow: "hidden",
               border: "1px solid rgba(255,255,255,0.06)",
+              boxShadow: "0 0 40px rgba(0,0,0,0.5)",
+transition: "0.3s",
             }}
           >
             <img
