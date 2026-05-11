@@ -22,7 +22,8 @@
         href="#"
         className="btn-primary"
         onClick={() =>
-          document.getElementById('products')
+          document
+            .getElementById('products')
             .scrollIntoView({ behavior: 'smooth' })
         }
       >
@@ -38,6 +39,5 @@
       </a>
 
     </div>
-
   </div>
 </section>
