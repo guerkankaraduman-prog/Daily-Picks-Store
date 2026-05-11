@@ -3,7 +3,7 @@ function App() {
     <div>
       <h1>Daily Picks Store</h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
