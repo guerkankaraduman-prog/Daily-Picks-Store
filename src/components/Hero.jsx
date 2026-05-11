@@ -1,43 +1,11 @@
-<section className="hero">
-  <div className="hero-content">
+import React from "react";
 
-    <span className="hero-tag">
-      Die besten Produkte. Jeden Tag neu entdeckt.
-    </span>
+function Hero() {
+  return (
+    <section>
+      <h1>Daily Picks Store</h1>
+    </section>
+  );
+}
 
-    <h1 className="hero-title">
-      Smart Picks.<br />
-      <em>Better Living.</em><br />
-      Every Day.
-    </h1>
-
-    <p className="hero-sub">
-      Curated viral Amazon products that transform your everyday routine.
-      Handpicked for quality, value, and that spark-of-joy factor.
-    </p>
-
-    <div className="hero-buttons">
-
-      <a
-        href="#"
-        className="btn-primary"
-        onClick={() =>
-          document
-            .getElementById('products')
-            .scrollIntoView({ behavior: 'smooth' })
-        }
-      >
-        Explore Picks
-      </a>
-
-      <a
-        href="#"
-        className="btn-outline"
-        onClick={() => showPage('about')}
-      >
-        Our Story
-      </a>
-
-    </div>
-  </div>
-</section>
+export default Hero;
