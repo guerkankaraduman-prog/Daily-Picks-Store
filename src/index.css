@@ -128,8 +128,20 @@ section{
 }
 
 .product-image-wrapper img{
-<<<<<<< HEAD
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
 }
-=======
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
->>>>>>> ce75893 (Add premium sections and styling)
+
+.nav-links li {
+  list-style: none;
+}
+
