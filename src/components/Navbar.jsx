@@ -1,10 +1,10 @@
 <!-- NAVIGATION -->
 <nav id="mainNav">
   <a class="nav-logo" href="#" onclick="showPage('home');return false;">
-    <img src="logo-v3.png" alt="Daily Picks Logo" style="width:150px;height:auto;">
-  </a>
+  <img src="logo-v3.png" alt="Daily Picks Logo" style="width:150px;height:auto;">
+</a>
 
-  <ul class="nav-links" id="navLinks">
+<ul class="nav-links" id="navLinks">
     <li><a href="#" onclick="showPage('home');toggleMenu();return false;">Home</a></li>
     <li><a href="#" onclick="showPage('home');setTimeout(()=>document.getElementById('products').scrollIntoView({behavior:'smooth'}),100);toggleMenu();return false;">Products</a></li>
     <li><a href="#" onclick="showPage('about');toggleMenu();return false;">About</a></li>
