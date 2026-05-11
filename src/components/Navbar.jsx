@@ -6,7 +6,7 @@ function Navbar() {
     <nav id="mainNav">
       <a className="nav-logo" href="/">
         <img
-          src={logo}
+          src={logo.png}
           alt="Daily Picks Logo"
           style={{ width: "150px", height: "auto" }}
         />
