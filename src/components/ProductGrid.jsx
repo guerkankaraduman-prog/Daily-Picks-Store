@@ -63,14 +63,17 @@ transition: "0.3s",
             }}
           >
             <img
-              src={product.image}
-              alt={product.title}
-              style={{
-                width: "100%",
-                height: "320px",
-                objectFit: "cover",
-              }}
-            />
+  src={product.image}
+  alt={product.title}
+  style={{
+    width: "100%",
+    height: "320px",
+    objectFit: "cover",
+    display: "block",
+    borderTopLeftRadius: "24px",
+    borderTopRightRadius: "24px",
+  }}
+/>
 
             <div
               style={{
