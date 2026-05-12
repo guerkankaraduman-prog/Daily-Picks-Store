@@ -1,7 +1,7 @@
 import React from "react";
 import HomeImage from "../assets/Home.jpg";
 import TechImage from "../assets/Tech.jpg";
-import TechImage from "../assets/Workspace.jpg";
+import WorkImage from "../assets/Workspace.jpg";
 
 const products = [
   {
@@ -9,13 +9,13 @@ const products = [
     image: HomeImage,
     category: "Home",
   },
-];
+
   {
     title: "BOSE QuietComfort Bluetooth-Kopfhörer",
     image: TechImage,
     category: "Tech",
   },
-];
+
   {
     title: "APMIEK Doppelkopf Schreibtischlampe LED",
     image: WorkImage,
