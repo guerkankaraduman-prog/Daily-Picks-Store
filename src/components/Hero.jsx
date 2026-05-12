@@ -32,7 +32,7 @@ export default function Hero() {
           maxWidth: "700px",
         }}
       >
-        Jeden Tag handverlesen. Jeden Tag unschlagbar. Daily-Picks.store kuratiert die besten Angebote aus Mode, Trend, Home & Lifestyle - exklusiv für dich.
+        Jeden Tag unschlagbar. Daily-Picks.store kuratiert die besten Angebote aus Mode, Trend, Home & Lifestyle - exklusiv für dich.
       </p>
     </section>
   );
