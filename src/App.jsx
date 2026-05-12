@@ -1,7 +1,7 @@
 import React from "react";
 import ProductGrid from "./components/ProductGrid";
 import Navbar from "./components/Navbar";
-import PremiumHero from "./components/PremiumHero";
+import Hero from "./components/Hero";
 
 function App() {
   return (
