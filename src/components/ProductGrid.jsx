@@ -1,25 +1,25 @@
 import React from "react";
+import HomeImage from "../assets/Home.jpg";
+import TechImage from "../assets/Tech.jpg";
+import TechImage from "../assets/Workspace.jpg";
 
 const products = [
   {
-    title: "Smart LED Lamp",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
+    title: "PHILIPS Wasserkocher",
+    image: HomeImage,
     category: "Home",
   },
-
+];
   {
-    title: "Wireless Headphones",
-    image:
-      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1200&auto=format&fit=crop",
+    title: "BOSE QuietComfort Bluetooth-Kopfhörer",
+    image: TechImage,
     category: "Tech",
   },
-
+];
   {
-    title: "Minimal Desk Setup",
-    image:
-      "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?q=80&w=1200&auto=format&fit=crop",
-    category: "Workspace",
+    title: "APMIEK Doppelkopf Schreibtischlampe LED",
+    image: WorkImage,
+    category: "Work",
   },
 ];
 
