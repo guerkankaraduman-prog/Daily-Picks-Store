@@ -17,7 +17,7 @@ const products = [
   },
 
   {
-    title: "Einhell Elektro-Rasenmäher",
+    title: "EINHELL Elektro-Rasenmäher",
     image: WorkImage,
     category: "Work",
   },
