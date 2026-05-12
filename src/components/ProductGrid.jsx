@@ -11,13 +11,13 @@ const products = [
   },
 
   {
-    title: "BOSE QuietComfort Bluetooth-Kopfhörer",
+    title: "BOSE Bluetooth-Kopfhörer",
     image: TechImage,
     category: "Tech",
   },
 
   {
-    title: "Einhell Elektro-Rasenmäher GC-EM 1032",
+    title: "Einhell Elektro-Rasenmäher",
     image: WorkImage,
     category: "Work",
   },
