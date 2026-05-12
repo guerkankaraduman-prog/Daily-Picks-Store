@@ -1,14 +1,14 @@
 import React from "react";
 import ProductGrid from "./components/ProductGrid";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import PremiumHero from "./components/PremiumHero";
 
 function App() {
   return (
     <>
       <Navbar />
 
-      <Hero />
+      <PremiumHero />
 
       <ProductGrid />
 
