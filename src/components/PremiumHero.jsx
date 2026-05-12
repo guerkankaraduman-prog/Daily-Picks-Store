@@ -5,25 +5,9 @@ export default function PremiumHero() {
         background: "#050505",
         color: "white",
         minHeight: "100vh",
-        padding: "120px 80px",
-        position: "relative",
-        overflow: "hidden",
+        padding: "120px 60px",
       }}
     >
-      {/* Glow */}
-      <div
-        style={{
-          position: "absolute",
-          width: "700px",
-          height: "700px",
-          background: "rgba(255,122,0,0.12)",
-          filter: "blur(140px)",
-          borderRadius: "999px",
-          top: "-250px",
-          right: "-200px",
-        }}
-      />
-
       <div
         style={{
           maxWidth: "1400px",
@@ -32,9 +16,7 @@ export default function PremiumHero() {
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "space-between",
-          gap: "80px",
-          position: "relative",
-          zIndex: 2,
+          gap: "60px",
         }}
       >
         {/* LEFT */}
@@ -47,21 +29,20 @@ export default function PremiumHero() {
           <div
             style={{
               display: "inline-block",
-              padding: "10px 20px",
+              padding: "10px 18px",
               borderRadius: "999px",
-              border: "1px solid rgba(255,122,0,0.25)",
+              border: "1px solid rgba(255,122,0,0.2)",
               color: "#ff7a00",
               background: "rgba(255,122,0,0.08)",
               marginBottom: "30px",
-              fontWeight: "600",
             }}
           >
-            CURATED. TESTED. LOVED.
+            CURATED PREMIUM PICKS
           </div>
 
           <h1
             style={{
-              fontSize: "92px",
+              fontSize: "90px",
               lineHeight: "0.95",
               fontWeight: "900",
               marginBottom: "30px",
@@ -69,20 +50,20 @@ export default function PremiumHero() {
           >
             Smart Picks.
             <br />
-            Better <span style={{ color: "#ff7a00" }}>Living.</span>
+            Better Living.
           </h1>
 
           <p
             style={{
-              fontSize: "24px",
-              lineHeight: "1.7",
+              fontSize: "22px",
               color: "#9a9a9a",
-              maxWidth: "650px",
-              marginBottom: "50px",
+              lineHeight: "1.7",
+              maxWidth: "600px",
+              marginBottom: "40px",
             }}
           >
-            Premium curated Amazon products that upgrade your everyday
-            lifestyle with innovation, aesthetics and quality.
+            Premium curated Amazon finds that combine aesthetics,
+            functionality and innovation.
           </p>
 
           <div
@@ -90,7 +71,6 @@ export default function PremiumHero() {
               display: "flex",
               gap: "20px",
               flexWrap: "wrap",
-              marginBottom: "50px",
             }}
           >
             <button
@@ -98,14 +78,14 @@ export default function PremiumHero() {
                 background: "#ff7a00",
                 color: "black",
                 border: "none",
-                padding: "18px 34px",
+                padding: "18px 36px",
                 borderRadius: "18px",
                 fontSize: "18px",
                 fontWeight: "700",
                 cursor: "pointer",
               }}
             >
-              Shop Trending →
+              Shop Trending
             </button>
 
             <button
@@ -113,66 +93,15 @@ export default function PremiumHero() {
                 background: "transparent",
                 color: "white",
                 border: "1px solid rgba(255,255,255,0.12)",
-                padding: "18px 34px",
+                padding: "18px 36px",
                 borderRadius: "18px",
                 fontSize: "18px",
                 fontWeight: "700",
                 cursor: "pointer",
               }}
             >
-              View Collections
+              Explore Collection
             </button>
-          </div>
-
-          {/* Stats */}
-          <div
-            style={{
-              display: "flex",
-              gap: "50px",
-              flexWrap: "wrap",
-            }}
-          >
-            <div>
-              <h3
-                style={{
-                  color: "#ff7a00",
-                  fontSize: "36px",
-                  marginBottom: "8px",
-                }}
-              >
-                500+
-              </h3>
-
-              <p style={{ color: "#777" }}>Handpicked Products</p>
-            </div>
-
-            <div>
-              <h3
-                style={{
-                  color: "#ff7a00",
-                  fontSize: "36px",
-                  marginBottom: "8px",
-                }}
-              >
-                100%
-              </h3>
-
-              <p style={{ color: "#777" }}>Amazon Verified</p>
-            </div>
-
-            <div>
-              <h3
-                style={{
-                  color: "#ff7a00",
-                  fontSize: "36px",
-                  marginBottom: "8px",
-                }}
-              >
-                Daily
-              </h3>
-
-              <p style={{ color: "#777" }}>Trending Updates</p>
-            </div>
           </div>
         </div>
 
@@ -188,22 +117,22 @@ export default function PremiumHero() {
           <div
             style={{
               width: "100%",
-              maxWidth: "560px",
+              maxWidth: "520px",
               background: "#111",
               borderRadius: "40px",
               padding: "24px",
               border: "1px solid rgba(255,255,255,0.08)",
-              boxShadow: "0 0 80px rgba(255,122,0,0.08)",
+              boxShadow: "0 0 60px rgba(255,122,0,0.08)",
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1600&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1400&auto=format&fit=crop"
               alt="Premium Product"
               style={{
                 width: "100%",
-                height: "700px",
+                height: "650px",
                 objectFit: "cover",
-                borderRadius: "30px",
+                borderRadius: "28px",
               }}
             />
           </div>
