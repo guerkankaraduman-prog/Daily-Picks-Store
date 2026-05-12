@@ -40,7 +40,7 @@ export default function ProductGrid() {
           textAlign: "center",
         }}
       >
-        Featured Picks
+        Unsere Empfehlung
       </h2>
 
       <div
