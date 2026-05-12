@@ -93,13 +93,15 @@ transition: "0.3s",
               </p>
 
               <h3
-                style={{
-                  fontSize: "28px",
-                  marginBottom: "24px",
-                }}
-              >
-                {product.title}
-              </h3>
+  style={{
+    fontSize: "20px",
+    lineHeight: "1.3",
+    marginBottom: "20px",
+    fontWeight: "700"
+  }}
+>
+  {product.title}
+</h3>
 
               <a
                 href="https://www.amazon.com"
