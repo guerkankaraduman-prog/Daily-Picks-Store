@@ -23,6 +23,7 @@ export default function Hero() {
         }}
       >
         Smart Picks.
+        For Everyday Life.
       </h1>
 
       <p
@@ -32,7 +33,7 @@ export default function Hero() {
           maxWidth: "700px",
         }}
       >
-        Curated viral Amazon products that transform your everyday routine.
+        Curated gadgets, tools & essentials that actually improve your daily routine.
       </p>
     </section>
   );
