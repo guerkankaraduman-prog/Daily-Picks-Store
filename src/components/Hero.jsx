@@ -22,8 +22,7 @@ export default function Hero() {
           marginBottom: "20px",
         }}
       >
-        Smart Picks.
-        For Everyday Life.
+        Deine tägliche Auswahl der besten Deals.
       </h1>
 
       <p
@@ -33,7 +32,7 @@ export default function Hero() {
           maxWidth: "700px",
         }}
       >
-        Curated gadgets, tools & essentials that actually improve your daily routine.
+        Jeden Tag handverlesen. Jeden Tag unschlagbar. Daily-Picks.store kuratiert die besten Angebote aus Mode, Trend, Home & Lifestyle - exklusiv für dich.
       </p>
     </section>
   );
