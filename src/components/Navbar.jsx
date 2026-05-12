@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav
       style={{
         width: "100%",
-        padding: "24px 48px",
+        padding: "14px 48px",
         position: "fixed",
         top: 0,
         left: 0,
