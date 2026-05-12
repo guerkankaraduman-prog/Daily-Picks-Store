@@ -68,11 +68,13 @@ transition: "0.3s",
   style={{
     width: "100%",
     height: "320px",
-    objectFit: "cover",
+    objectFit: "contain",
     objectPosition: "center",
     display: "block",
+    background: "#fff",
+    padding: "20px",
     borderTopLeftRadius: "24px",
-    borderTopRightRadius: "24px",
+    borderTopRightRadius: "24px"
   }}
 />
 
