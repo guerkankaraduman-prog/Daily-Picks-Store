@@ -17,7 +17,7 @@ const products = [
   },
 
   {
-    title: "APMIEK Doppelkopf Schreibtischlampe LED",
+    title: "Einhell Elektro-Rasenmäher GC-EM 1032",
     image: WorkImage,
     category: "Work",
   },
