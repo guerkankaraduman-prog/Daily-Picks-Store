@@ -49,7 +49,7 @@ export default function Navbar() {
   }}
 >
   <>
-    DAILY <span style={{ color: "#ff7a00" }}>PICKS</span>
+    DAILY <span style={{ color: "#ff6602" }}>PICKS</span>
   </>
 </span>
       </a>
