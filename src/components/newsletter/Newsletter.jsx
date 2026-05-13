@@ -1,4 +1,4 @@
-import "../../styles/newsletter.css";
+import React, { useState } from "react";
 
 export default function Newsletter() {
   return (
