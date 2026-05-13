@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import "../../styles/hero.css";
 
 export default function Hero() {
@@ -11,7 +13,23 @@ export default function Hero() {
       <div className="hero-container">
 
         {/* LEFT CONTENT */}
-        <div className="hero-content">
+        <motion.div
+          className="hero-content"
+
+          initial={{
+            opacity: 0,
+            x: -80,
+          }}
+
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+
+          transition={{
+            duration: 0.8,
+          }}
+        >
 
           <div className="hero-badge">
             Trending Products 2026
@@ -23,18 +41,25 @@ export default function Hero() {
           </h1>
 
           <p className="hero-description">
-            Handpicked trending products from tech, fitness,
-            home and lifestyle — curated daily for smart shoppers.
+            Handpicked trending products from tech,
+            fitness, home and lifestyle — curated
+            daily for smart shoppers.
           </p>
 
           {/* BUTTONS */}
           <div className="hero-buttons">
 
-            <a href="#products" className="hero-button-primary">
+            <a
+              href="#products"
+              className="hero-button-primary"
+            >
               Explore Products
             </a>
 
-            <a href="#about" className="hero-button-secondary">
+            <a
+              href="#about"
+              className="hero-button-secondary"
+            >
               Learn More
             </a>
 
@@ -60,10 +85,26 @@ export default function Hero() {
 
           </div>
 
-        </div>
+        </motion.div>
 
         {/* RIGHT SIDE */}
-        <div className="hero-visual">
+        <motion.div
+          className="hero-visual"
+
+          initial={{
+            opacity: 0,
+            x: 80,
+          }}
+
+          animate={{
+            opacity: 1,
+            x: 0,
+          }}
+
+          transition={{
+            duration: 0.9,
+          }}
+        >
 
           <div className="hero-card">
 
@@ -78,17 +119,21 @@ export default function Hero() {
             />
 
             <div className="hero-card-content">
-              <h3>Premium Lifestyle Picks</h3>
+
+              <h3>
+                Premium Lifestyle Picks
+              </h3>
 
               <p>
-                Discover top-rated products selected for
-                modern living and smart shopping.
+                Discover top-rated products selected
+                for modern living and smart shopping.
               </p>
+
             </div>
 
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
     </section>
