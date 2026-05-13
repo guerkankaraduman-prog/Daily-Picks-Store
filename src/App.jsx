@@ -3,6 +3,7 @@ import Products from "./components/products/Products";
 import Loader from "./components/ui/Loader";
 import Particles from "./components/ui/Particles";
 import Spotlight from "./components/ui/Spotlight";
+import Newsletter from "./components/newsletter/Newsletter";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Loader />
       <Particles />
       <Spotlight />
+      <Newsletter />
       <Footer />
       <Navbar />
       <Hero />
