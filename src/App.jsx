@@ -1,11 +1,13 @@
 import SmoothScroll from "./components/ui/SmoothScroll";
 import Products from "./components/products/Products";
+import Loader from "./components/ui/Loader";
 
 function App() {
   return (
     <>
       <CustomCursor />
       <SmoothScroll />
+      <Loader />
       <Navbar />
       <Hero />
       <Products />
