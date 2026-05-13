@@ -12,14 +12,16 @@ export default function ProductCard({ product }) {
 
       <div className="product-content">
 
-        <h3>{product.title}</h3>
+        <h3 className="product-title">
+          {product.title}
+        </h3>
 
         <p className="product-price">
           {product.price}
         </p>
 
         <a
-          href="https://amazon.com"
+          href={product.link || "https://amazon.com"}
           target="_blank"
           rel="noopener noreferrer"
           className="product-button"
