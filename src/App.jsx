@@ -4,6 +4,7 @@ import Loader from "./components/ui/Loader";
 import Particles from "./components/ui/Particles";
 import Spotlight from "./components/ui/Spotlight";
 import Newsletter from "./components/newsletter/Newsletter";
+import Stats from "./components/hero/Stats";
 import Footer from "./components/layout/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Footer />
       <Navbar />
       <Hero />
+      <Stats />
       <Products />
 
       <section
