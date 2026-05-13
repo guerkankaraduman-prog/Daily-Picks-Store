@@ -1,13 +1,69 @@
+import { useRef } from "react";
+
 import { motion } from "framer-motion";
 
 export default function ProductCard({
   product,
   onClick,
 }) {
+  const cardRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    const card = cardRef.current;
+
+    if (!card) return;
+
+    const rect =
+      card.getBoundingClientRect();
+
+    const x =
+      e.clientX - rect.left;
+
+    const y =
+      e.clientY - rect.top;
+
+    const centerX =
+      rect.width / 2;
+
+    const centerY =
+      rect.height / 2;
+
+    const rotateX =
+      ((y - centerY) / centerY) * -8;
+
+    const rotateY =
+      ((x - centerX) / centerX) * 8;
+
+    card.style.transform =
+      `
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+      translateY(-10px)
+      `;
+  };
+
+  const resetCard = () => {
+    if (!cardRef.current) return;
+
+    cardRef.current.style.transform =
+      `
+      rotateX(0deg)
+      rotateY(0deg)
+      translateY(0px)
+      `;
+  };
+
   return (
     <motion.div
+      ref={cardRef}
+
       className="product-card"
+
       onClick={onClick}
+
+      onMouseMove={handleMouseMove}
+
+      onMouseLeave={resetCard}
 
       initial={{
         opacity: 0,
@@ -19,10 +75,6 @@ export default function ProductCard({
         y: 0,
       }}
 
-      whileHover={{
-        y: -10,
-      }}
-
       transition={{
         duration: 0.45,
       }}
@@ -32,16 +84,18 @@ export default function ProductCard({
       }}
     >
 
-      {/* PRODUCT IMAGE */}
+      {/* IMAGE */}
       <div className="product-image-wrapper">
+
         <img
           src={product.image}
           alt={product.title}
           className="product-image"
         />
+
       </div>
 
-      {/* PRODUCT CONTENT */}
+      {/* CONTENT */}
       <div className="product-content">
 
         <h3 className="product-title">
@@ -54,10 +108,16 @@ export default function ProductCard({
 
         <a
           href={product.link || "https://amazon.com"}
+
           target="_blank"
+
           rel="noopener noreferrer"
+
           className="product-button"
-          onClick={(e) => e.stopPropagation()}
+
+          onClick={(e) =>
+            e.stopPropagation()
+          }
         >
           View Product ↗
         </a>
