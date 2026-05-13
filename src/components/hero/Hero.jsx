@@ -1,10 +1,38 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import "../../styles/hero.css";
 
 export default function Hero() {
+  const [mousePosition, setMousePosition] =
+    useState({
+      x: 0,
+      y: 0,
+    });
+
+  const handleMouseMove = (e) => {
+    const { clientX, clientY } = e;
+
+    setMousePosition({
+      x: clientX,
+      y: clientY,
+    });
+  };
+
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      onMouseMove={handleMouseMove}
+    >
+
+      {/* MOUSE GLOW */}
+      <div
+        className="mouse-glow"
+        style={{
+          left: mousePosition.x - 200,
+          top: mousePosition.y - 200,
+        }}
+      ></div>
 
       {/* BACKGROUND GLOW */}
       <div className="hero-glow hero-glow-1"></div>
