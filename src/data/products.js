@@ -1,3 +1,5 @@
+import Hero from './components/hero/Hero'
+
 const products = [
  {
    id:1,
