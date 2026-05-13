@@ -1,7 +1,14 @@
-export default function ProductCard({ product }) {
+export default function ProductCard({
+  product,
+  onClick,
+}) {
   return (
-    <div className="product-card">
+    <div
+      className="product-card"
+      onClick={onClick}
+    >
 
+      {/* PRODUCT IMAGE */}
       <div className="product-image-wrapper">
         <img
           src={product.image}
@@ -10,6 +17,7 @@ export default function ProductCard({ product }) {
         />
       </div>
 
+      {/* PRODUCT CONTENT */}
       <div className="product-content">
 
         <h3 className="product-title">
@@ -25,6 +33,7 @@ export default function ProductCard({ product }) {
           target="_blank"
           rel="noopener noreferrer"
           className="product-button"
+          onClick={(e) => e.stopPropagation()}
         >
           View Product ↗
         </a>
