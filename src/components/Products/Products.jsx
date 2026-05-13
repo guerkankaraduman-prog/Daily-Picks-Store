@@ -1,29 +1,7 @@
-import "../../styles/products.css";
+import products from "../../data/products";
 
 export default function Products() {
-  const products = [
-    {
-      id: 1,
-      title: "Apple Watch Ultra",
-      price: "$799",
-      image:
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12",
-    },
-    {
-      id: 2,
-      title: "Sony Headphones",
-      price: "$349",
-      image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-    },
-    {
-      id: 3,
-      title: "Gaming Setup",
-      price: "$1299",
-      image:
-        "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8",
-    },
-  ];
+  
 
   return (
     <section className="products" id="products">
