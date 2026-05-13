@@ -4,6 +4,8 @@ import "../../styles/products.css";
 
 import products from "../../data/products";
 
+import ProductSearch from "./ProductSearch";
+
 import ProductGrid from "./ProductGrid";
 import ProductModal from "./ProductModal";
 import ProductFilters from "./ProductFilters";
@@ -14,14 +16,25 @@ export default function Products() {
 
   const [activeCategory, setActiveCategory] =
     useState("All");
+  
+  const [searchTerm, setSearchTerm] =
+  useState("");
 
-  const filteredProducts =
-    activeCategory === "All"
-      ? products
-      : products.filter(
-          (product) =>
-            product.category === activeCategory
-        );
+  const filteredProducts = products.filter(
+  (product) => {
+
+    const matchesCategory =
+      activeCategory === "All" ||
+      product.category === activeCategory;
+
+    const matchesSearch =
+      product.title
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase());
+
+    return matchesCategory && matchesSearch;
+  }
+);
 
   return (
     <section className="products" id="products">
@@ -48,9 +61,10 @@ export default function Products() {
 
         {/* FILTERS */}
         <ProductFilters
-          activeCategory={activeCategory}
-          setActiveCategory={setActiveCategory}
-        />
+          <ProductSearch
+  searchTerm={searchTerm}
+  setSearchTerm={setSearchTerm}
+/>
 
         {/* PRODUCT GRID */}
         <ProductGrid
