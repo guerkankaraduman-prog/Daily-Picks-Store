@@ -1,11 +1,35 @@
+import { motion } from "framer-motion";
+
 export default function ProductCard({
   product,
   onClick,
 }) {
   return (
-    <div
+    <motion.div
       className="product-card"
       onClick={onClick}
+
+      initial={{
+        opacity: 0,
+        y: 40,
+      }}
+
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+
+      whileHover={{
+        y: -10,
+      }}
+
+      transition={{
+        duration: 0.45,
+      }}
+
+      viewport={{
+        once: true,
+      }}
     >
 
       {/* PRODUCT IMAGE */}
@@ -40,6 +64,6 @@ export default function ProductCard({
 
       </div>
 
-    </div>
+    </motion.div>
   );
 }
