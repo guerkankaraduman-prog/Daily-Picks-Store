@@ -36,34 +36,24 @@ function App() {
       <Loader />
       <Particles />
       <Spotlight />
+    
       <Navbar />
       <Hero />
       <Stats />
       <Products />
-      <Newsletter />
-      <Footer />
-      
-      
 
       <section
-        style={{
-          background: "#000",
-          color: "white",
-          padding: "120px 60px",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "56px",
-            fontWeight: "900",
-            textAlign: "center",
-            marginBottom: "70px",
-            color: "#ff7a00",
-          }}
-        >
-          Trending Categories
-        </h2>
+  style={{
+    background: "#000",
+    color: "white",
+    padding: "120px 60px",
+  }}
+>
+  <h2>Trending Categories</h2>
 
+  <div>
+    ...
+  </div>
         <div
           style={{
             display: "grid",
@@ -106,6 +96,8 @@ function App() {
           )}
         </div>
       </section>
+    <Newsletter />
+<Footer />
     </motion.div>
   );
 }
