@@ -1,6 +1,7 @@
 import SmoothScroll from "./components/ui/SmoothScroll";
 import Products from "./components/products/Products";
 import Loader from "./components/ui/Loader";
+import Particles from "./components/ui/Particles";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <CustomCursor />
       <SmoothScroll />
       <Loader />
+      <Particles />
       <Navbar />
       <Hero />
       <Products />
