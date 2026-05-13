@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "../../styles/navbar.css";
 
-import logo from "../../assets/logo-v4.png";
+import logo from "../../assets/logos/logo-v4.png";
 
 export default function Navbar() {
 
