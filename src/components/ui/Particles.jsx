@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 export default function Particles() {
 
   const particles = Array.from(
