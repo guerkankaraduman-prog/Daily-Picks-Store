@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../../styles/products.css";
-import products from "src/components/products/Products";
+
+import products from "../../data/products";
 import ProductGrid from "./ProductGrid";
 import ProductModal from "./ProductModal";
 import ProductFilters from "./ProductFilters";
