@@ -357,3 +357,44 @@
     padding:22px;
   }
 }
+.product-search{
+  display:flex;
+  justify-content:center;
+
+  margin-bottom:50px;
+}
+
+.product-search-input{
+  width:100%;
+  max-width:520px;
+
+  padding:18px 22px;
+
+  border:none;
+  border-radius:18px;
+
+  background:
+  rgba(255,255,255,.05);
+
+  color:white;
+
+  font-size:16px;
+
+  outline:none;
+
+  border:
+  1px solid rgba(255,255,255,.06);
+
+  transition:.3s;
+}
+
+.product-search-input:focus{
+  border-color:#ff6602;
+
+  box-shadow:
+  0 0 0 4px rgba(255,102,2,.12);
+}
+
+.product-search-input::placeholder{
+  color:#999;
+}
