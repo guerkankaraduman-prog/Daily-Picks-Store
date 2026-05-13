@@ -1,9 +1,11 @@
+import SmoothScroll from "./components/ui/SmoothScroll";
 import Products from "./components/products/Products";
 
 function App() {
   return (
     <>
       <CustomCursor />
+      <SmoothScroll />
       <Navbar />
       <Hero />
       <Products />
