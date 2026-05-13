@@ -1,40 +1,71 @@
-import React from "react";
+import "../../styles/footer.css";
 
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="footer-section" id="disclosure">
-      <div className="footer-grid">
-        <div>
-          <h3>Daily Picks Store</h3>
-          <p>
-            Smart Amazon finds for modern living and Pinterest-inspired trends.
+    <footer className="footer">
+
+      <div className="footer-container">
+
+        {/* LEFT */}
+        <div className="footer-brand">
+
+          <h2 className="footer-logo">
+            DAILY <span>PICKS</span>
+          </h2>
+
+          <p className="footer-description">
+            Discover trending products curated daily
+            for modern shoppers and tech lovers.
           </p>
+
         </div>
 
-        <div>
-          <h4>Social Links</h4>
-          <ul>
-            <li><a href="#">Pinterest</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
-          </ul>
+        {/* LINKS */}
+        <div className="footer-links">
+
+          <div className="footer-column">
+
+            <h3>Navigation</h3>
+
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+
+          </div>
+
+          <div className="footer-column">
+
+            <h3>Categories</h3>
+
+            <a href="#">Tech</a>
+            <a href="#">Fitness</a>
+            <a href="#">Lifestyle</a>
+
+          </div>
+
+          <div className="footer-column">
+
+            <h3>Socials</h3>
+
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+            <a href="#">YouTube</a>
+
+          </div>
+
         </div>
 
-        <div>
-          <h4>Legal</h4>
-          <ul>
-            <li><a href="#">Impressum</a></li>
-            <li><a href="#">Datenschutz</a></li>
-            <li><a href="#">Disclosure</a></li>
-          </ul>
-        </div>
       </div>
 
+      {/* BOTTOM */}
       <div className="footer-bottom">
+
         <p>
-          © 2026 Daily Picks Store — Affiliate links may generate commissions.
+          © 2026 Daily Picks. All rights reserved.
         </p>
+
       </div>
+
     </footer>
   );
 }
