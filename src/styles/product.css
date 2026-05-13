@@ -176,6 +176,8 @@
   repeat(auto-fit,minmax(320px,1fr));
 
   gap:34px;
+
+  perspective:1400px;
 }
 
 /* PRODUCT CARD */
@@ -197,11 +199,18 @@
 
   overflow:hidden;
 
-  transition:.4s ease;
+  transition:
+  transform .18s ease,
+  box-shadow .3s ease,
+  border-color .3s ease;
+
+  transform-style:
+  preserve-3d;
+
+  will-change:
+  transform;
 
   backdrop-filter:blur(18px);
-
-  -webkit-backdrop-filter:blur(18px);
 
   cursor:pointer;
 
