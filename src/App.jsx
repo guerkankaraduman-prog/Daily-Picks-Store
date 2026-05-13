@@ -1,3 +1,5 @@
+import React from "react";
+import { motion } from "framer-motion";
 import SmoothScroll from "./components/ui/SmoothScroll";
 import Products from "./components/products/Products";
 import Loader from "./components/ui/Loader";
@@ -6,7 +8,6 @@ import Spotlight from "./components/ui/Spotlight";
 import Newsletter from "./components/newsletter/Newsletter";
 import Stats from "./components/hero/Stats";
 import Footer from "./components/layout/Footer";
-import { motion } from "framer-motion";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/hero/Hero";
 import CustomCursor from "./components/ui/CustomCursor";
