@@ -2,6 +2,7 @@ import SmoothScroll from "./components/ui/SmoothScroll";
 import Products from "./components/products/Products";
 import Loader from "./components/ui/Loader";
 import Particles from "./components/ui/Particles";
+import Spotlight from "./components/ui/Spotlight";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <SmoothScroll />
       <Loader />
       <Particles />
+      <Spotlight />
       <Navbar />
       <Hero />
       <Products />
