@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import MagneticButton from "../ui/MagneticButton";
 
 import "../../styles/hero.css";
 
@@ -77,19 +78,19 @@ export default function Hero() {
           {/* BUTTONS */}
           <div className="hero-buttons">
 
-            <a
-              href="#products"
-              className="hero-button-primary"
-            >
-              Explore Products
-            </a>
+            <MagneticButton
+  href="#products"
+  className="hero-button-primary"
+>
+  Explore Products
+</MagneticButton>
 
-            <a
-              href="#about"
-              className="hero-button-secondary"
-            >
-              Learn More
-            </a>
+            <MagneticButton
+  href="#about"
+  className="hero-button-secondary"
+>
+  Learn More
+</MagneticButton>
 
           </div>
 
