@@ -1,9 +1,6 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
 import "../../styles/navbar.css";
-
 import logo from "../../assets/logos/logo-v4.png";
-
 export default function Navbar() {
 
   const [menuOpen, setMenuOpen] =
