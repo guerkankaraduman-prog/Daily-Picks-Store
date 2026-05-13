@@ -6,21 +6,43 @@ import Spotlight from "./components/ui/Spotlight";
 import Newsletter from "./components/newsletter/Newsletter";
 import Stats from "./components/hero/Stats";
 import Footer from "./components/layout/Footer";
+import { motion } from "framer-motion";
+import Navbar from "./components/layout/Navbar";
+import Hero from "./components/hero/Hero";
+import CustomCursor from "./components/ui/CustomCursor";
 
 function App() {
   return (
-    <>
+  <motion.div
+
+    initial={{
+      opacity: 0,
+      y: 20,
+    }}
+
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+
+    transition={{
+      duration: 0.8,
+      ease: "easeOut",
+    }}
+  >
       <CustomCursor />
       <SmoothScroll />
       <Loader />
       <Particles />
       <Spotlight />
-      <Newsletter />
-      <Footer />
       <Navbar />
       <Hero />
       <Stats />
       <Products />
+      <Newsletter />
+      <Footer />
+      
+      
 
       <section
         style={{
@@ -83,7 +105,7 @@ function App() {
           )}
         </div>
       </section>
-    </>
+    </motion.div>
   );
 }
 
