@@ -1,71 +1,92 @@
-import React from "react";
+import "../../styles/products.css";
 
-const products = [
-  {
-    category: "Kitchen",
-    title: "Smart Blender Pro",
-    image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?q=80&w=1200&auto=format&fit=crop",
-    link: "https://www.amazon.com",
-  },
-  {
-    category: "Fitness",
-    title: "Resistance Bands Set",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop",
-    link: "https://www.amazon.com",
-  },
-  {
-    category: "Home",
-    title: "Minimal LED Lamp",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop",
-    link: "https://www.amazon.com",
-  },
-  {
-    category: "Tech",
-    title: "Wireless Smart Speaker",
-    image: "https://images.unsplash.com/photo-1512446733611-9099a758e52d?q=80&w=1200&auto=format&fit=crop",
-    link: "https://www.amazon.com",
-  },
-  {
-    category: "Beauty",
-    title: "Skincare Ice Roller",
-    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop",
-    link: "https://www.amazon.com",
-  },
-];
+export default function Products() {
+  const products = [
+    {
+      id: 1,
+      title: "Apple Watch Ultra",
+      price: "$799",
+      image:
+        "https://images.unsplash.com/photo-1546868871-7041f2a55e12",
+    },
+    {
+      id: 2,
+      title: "Sony Headphones",
+      price: "$349",
+      image:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    },
+    {
+      id: 3,
+      title: "Gaming Setup",
+      price: "$1299",
+      image:
+        "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8",
+    },
+  ];
 
-function Products() {
   return (
-    <section className="products-section" id="products">
-      <div className="section-header">
-        <span className="section-tag">TRENDING PICKS</span>
-        <h2>Viral Products People Actually Love</h2>
-        <p>
-          Curated Pinterest-inspired Amazon finds for smarter everyday living.
-        </p>
-      </div>
+    <section className="products" id="products">
 
-      <div className="products-grid">
-        {products.map((product, index) => (
-          <div className="product-card" key={index}>
-            <div className="product-image-wrapper">
-              <img src={product.image} alt={product.title} />
-              <span className="product-category">{product.category}</span>
-            </div>
+      <div className="products-container">
 
-            <div className="product-content">
-              <h3>{product.title}</h3>
+        {/* HEADER */}
+        <div className="products-header">
 
-              <a
-                href={product.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="amazon-btn"
-              >
-                Shop on Amazon
-              </a>
-            </div>
+          <div className="products-badge">
+            Featured Picks
           </div>
-        ))}
+
+          <h2 className="products-title">
+            Trending Products
+          </h2>
+
+          <p className="products-description">
+            Explore our handpicked collection of the most
+            popular products right now.
+          </p>
+
+        </div>
+
+        {/* GRID */}
+        <div className="products-grid">
+
+          {products.map((product) => (
+            <div className="product-card" key={product.id}>
+
+              <div className="product-image-wrapper">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="product-image"
+                />
+              </div>
+
+              <div className="product-content">
+
+                <h3>{product.title}</h3>
+
+                <p className="product-price">
+                  {product.price}
+                </p>
+
+                <a
+                  href="https://amazon.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="product-button"
+                >
+                  View Product ↗
+                </a>
+
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
       </div>
     </section>
   );
+}
