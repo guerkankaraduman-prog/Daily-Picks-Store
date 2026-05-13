@@ -6,9 +6,22 @@ import products from "../../data/products";
 
 import ProductGrid from "./ProductGrid";
 import ProductModal from "./ProductModal";
+import ProductFilters from "./ProductFilters";
 
 export default function Products() {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProduct, setSelectedProduct] =
+    useState(null);
+
+  const [activeCategory, setActiveCategory] =
+    useState("All");
+
+  const filteredProducts =
+    activeCategory === "All"
+      ? products
+      : products.filter(
+          (product) =>
+            product.category === activeCategory
+        );
 
   return (
     <section className="products" id="products">
@@ -33,9 +46,15 @@ export default function Products() {
 
         </div>
 
+        {/* FILTERS */}
+        <ProductFilters
+          activeCategory={activeCategory}
+          setActiveCategory={setActiveCategory}
+        />
+
         {/* PRODUCT GRID */}
         <ProductGrid
-          products={products}
+          products={filteredProducts}
           onProductClick={setSelectedProduct}
         />
 
