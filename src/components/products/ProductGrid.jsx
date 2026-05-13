@@ -1,6 +1,9 @@
 import ProductCard from "./ProductCard";
 
-export default function ProductGrid({ products }) {
+export default function ProductGrid({
+  products,
+  onProductClick,
+}) {
   return (
     <div className="products-grid">
 
@@ -8,6 +11,7 @@ export default function ProductGrid({ products }) {
         <ProductCard
           key={product.id}
           product={product}
+          onClick={() => onProductClick(product)}
         />
       ))}
 
