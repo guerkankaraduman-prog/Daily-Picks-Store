@@ -81,3 +81,57 @@ html.lenis{
 .loader-logo span{
   color:#ff6602;
 }
+.particles{
+  position:fixed;
+
+  inset:0;
+
+  overflow:hidden;
+
+  pointer-events:none;
+
+  z-index:0;
+}
+
+.particle{
+  position:absolute;
+
+  bottom:-40px;
+
+  border-radius:50%;
+
+  background:
+  rgba(255,255,255,.08);
+
+  animation:
+  floatParticle linear infinite;
+
+  filter:blur(1px);
+}
+
+@keyframes floatParticle{
+
+  0%{
+    transform:
+    translateY(0px)
+    scale(1);
+
+    opacity:0;
+  }
+
+  10%{
+    opacity:1;
+  }
+
+  90%{
+    opacity:1;
+  }
+
+  100%{
+    transform:
+    translateY(-120vh)
+    scale(1.4);
+
+    opacity:0;
+  }
+}
