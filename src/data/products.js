@@ -1,11 +1,11 @@
 const products = [
   {
     id: 1,
-    title: "Apple Watch Ultra",
+    title: "GARMIN Vívoactive 6",
     category: "Tech",
-    price: "$799",
+    price: "252,47 €",
     image:
-      "https://images.unsplash.com/photo-1546868871-7041f2a55e12",
+      "https://images: garmin.png",
     link: "https://amazon.com",
   },
 
