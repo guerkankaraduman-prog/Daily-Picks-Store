@@ -5,7 +5,7 @@ const products = [
     category: "Tech",
     price: "252,47 €",
     image:
-      "https://images: garmin.png",
+      "https://image:"/src/assets/garmin.png"",
     link: "https://amazon.com",
   },
 
